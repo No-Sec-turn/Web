@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{background-color: #ffd;}
+
+ol {list-style: upper-roman; }
+
+#ol01 {line-height: 1.8;}
+
+#ol02 {border: 3px dashed #ccc;}
+
+.li01>b {color:blue;}
+.li01>span {color:blue;}
+
+.red {color:red; font-size: 1.3em;}
+
+.bg-pink{background-color: pink;}
+
+.bg-vio {
+	background-color: violet;
+	
+}

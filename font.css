@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+section {border: 3px solid #ccc;
+ margin: 2em 0;
+ padding : 1em; }
+ 
+ section>h2 {color: #ccc;
+ 		text-align:center;}
+ .pre {background-color:#ccc;
+ 
+ white-space:pre;
+ /* pre태그처럼 공백 살려줌  */
+ font-size: 14px;}
+ 
+ 
+ /* "ctrl + shift + /" */
+ /* font-size : ; 글자크기 */
+ #sec01 {font-size: 20px;}
+ 
+ .fs01 {font-size: 16px;}
+ .fs02 {font-size: 20px;}
+ .fs03 {font-size: 1em;}
+ .fs04 {font-size: 1.25em;}
+ .fs05 {font-size: 1rem;}
+ .fs06 {font-size: 1.25rem;}
+ 
+/* font-weight : ; 글자 두께 */
+
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;}
+.fw-n {font-weight: normal;}
+.fw-b {font-weight: bold;}
+
+ 
+ 
