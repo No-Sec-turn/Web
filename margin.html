@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+<h1>margin = border(테두리)의 바깥 여백</h1>
+
+<div id="div01">
+ <h2>margin 값의 갯수별 적용법</h2>
+  <ol>
+   <li>margin: n ; (바깥 여백의) 양사방이 값 하나로 동일함</li>
+   <li>margin: n n ; (바깥 여백의) 상하와 좌우의 순서로 동일함 <br>
+    <div class="wh">
+       영역 전체를 항상 중앙 정렬할 때 <br>
+    margin: n <b>auto</b>; 로 해서 좌우를 균등분할 하면 <br>
+        요소가 가운데 오게   할 수 있다.
+    </div>
+   </li>
+   <li>margin: n n n ; (바깥 여백의) 위쪽, 좌우 동일, 아래 순서로 적용</li>
+   <li>margin: n n n n ; (바깥 여백의) 위쪽, 우, 아래 , 좌 순서로 적용</li>
+  </ol>
+</div>
+
+
+<div id="input-box01">
+ <input type="text" value="margin:2em;" class="mg01">
+ <input type="text" value="margin: 2em 5em;" class="mg02">
+ <input type="text" value="margin: 2em 5em 4em;" class="mg03">
+ <input type="text" value="margin: 1em 2em 3em 4em;" class="mg04">
+ <input type="text" value="margin" class="mg05">
+</div>
+
+<section id="sec01">
+ <div class="dv01">div01 margin: 50px;</div>
+ <div class="dv02">div02 margin: 50px 10%;</div>
+ <div class="dv03">div03 margin: 20px 5% 70px;</div>
+ <div class="dv04">div04 margin: 90px 0 10px 3%;</div>
+ <div class="dv05">div05</div>
+</section>
+
+
+<div id="div02">
+ <h2>margin의 방향별 지정 속성</h2>
+  <ol>
+   <li class="mt">margin-top : n ; (바깥 여백) 위쪽</li>
+   <li class="mr">margin-right : n ; (바깥 여백)  우</li>
+   <li class="mb">margin-bottom : n ; (바깥 여백) 아래 </li>
+   <li class="ml">margin-left : n ; (바깥 여백) 좌</li>
+  </ol>
+</div>
+
+<h2>box-model의 2가지 타입</h2>
+ <p class="pre">
+  box-model은 2가지 타입으로 나뉨
+     줄이 바뀌는  block요소와
+     줄이 바뀌지 않는(한 줄에 나란히 올  수 있는) inline요소
+ </p>
+
+ <table class="tab01"> 
+  <caption>block요소와 inline요소의 차이점</caption>
+  <tr>
+   <th></th>
+   <th>block요소</th>
+   <th>inline요소</th>
+  </tr>
+  <tr>
+   <td>기본 위치</td>
+   <td>자동으로 줄이 바뀜.<br>한 줄에 다른 요소와 나란히 올 수 없음.</td>
+   <td>줄이 바뀌지 않음. <br>다른 요소와 나란히 올 수 있음.</td>
+  </tr>
+  <tr>
+   <td>대표 tag들</td>
+   <td>div, hn, p, ol, ul, dl, li <br>
+    nav, section, header, nav
+   </td>
+   <td>span, a, b, i, label, ... </td>
+  </tr>
+  <tr>
+   <td>width/height 크기</td>
+   <td>적용 됨.</td>
+   <td>적용 안 됨.</td>
+  </tr>
+  <tr>
+   <td>(상하)margin</td>
+   <td>적용 됨.</td>
+   <td>적용 안 됨. <br>
+   (좌우 margin만 가능)</td>
+  </tr>
+ </table>
+ 
+
+
+ 
+
+<h3>block요소</h3>
+ <div>div</div> <div class="bl-div">div</div> <div>div</div>
+ 
+
+<h3>inline요소</h3>
+
+ <a href="#">a</a><a href="#" class="in-a">a</a><a href="#">a</a>
+ <a href="#">a</a> <a href="#">a</a> <a href="#">a</a> <a href="#">a</a>
+ <a href="#">a</a> <a href="#">a</a> <a href="#">a</a> <a href="#">a</a> <a href="#">a</a>
+  <a href="#">a</a> <a href="#">a</a><a href="#">a</a> <a href="#">a</a> <a href="#">a</a> <a href="#">a</a>
+ <a href="#">a</a> <a href="#">a</a> <a href="#">a</a> <a href="#">a</a> <a href="#">a</a>
+  <a href="#">a</a> <a href="#">a</a>
+
+ <label>label</label> <label>label</label> 
+
+
+</body>
+</html>
+
+
+

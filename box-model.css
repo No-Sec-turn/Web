@@ -39,4 +39,28 @@ th {background-color:#7aa;
     padding: 12px 50px; color:#fff}
 td { padding: 6px 50px;}
 
+.h2-st {border-left: 12px solid; color: #900; 
+		background-color: #fdc;
+		padding-left: 10px;
+		padding-bottom: 5px;}
 
+
+
+/* 부모안에 있는 자식들을 한꺼번에 불러오기 -> 관계 선택자  */
+#pd-dir>p {border: 1px solid; color: #a00}
+
+
+/* 클래스 이름이니까 .찍어서 정의해야함 */
+.p-l {padding-left: 80px;}  
+.p-r {text-align: right; padding-right: 80px;}
+.p-t {padding-top: 2.5em;}
+.p-b {padding-bottom: 2.5em;}
+
+
+/* padding으로 폴라로이드 스타일 효과 내기 */
+#pola>img {border: 1px solid;}
+.pola01 {padding: 1em;}
+.pola02 {padding: 1em;
+ padding-bottom: 5em;}
+.pola03 {padding: 1em 1em 7em;}
+.pola04 {padding: 1.5em 1.3em 10em 1.3em;}
