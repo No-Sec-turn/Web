@@ -1,0 +1,400 @@
+﻿<html>
+ <head>
+<title>html 수업 두번째 (2) 표만들기 </title>
+ <style type="text/css">
+  table, th, td { 
+    border : 1px solid #3aa;
+       }
+   </style>
+ </head>
+  <body>
+
+<hr>
+ <h1>table 태그로 표 만들기</h>
+<hr>
+
+<h2> 표를 구성하는 태그들</h2>
+ <ol>
+  <li>table - 표의 시작과 끝을 선언</li>
+  <li>tr - 줄의 시작과 끝을 선언 - (한 줄 단위로 묶어준다고 생각)</li>
+  <li>th - 제목칸을 형성</li>
+  <li>td - 일반칸을 형성</li>
+
+</ol>
+
+<table>
+ <tr>
+  <th>태그</th>
+  <th>설명</th>
+ </tr>
+ <tr>
+  <td>table</td>
+  <td>표의 시작과 끝</td>
+  </tr>
+ <tr>
+  <td>tr</td>
+  <td>줄의 시작과 끝</td>
+ </tr>
+ <tr>
+  <td>th</td>
+  <td>제목 칸<br>(컨텐츠는 중앙정렬, 글자는 bold체로)</td>
+ </tr>
+ <tr>
+  <td>td</td>
+  <td>일반 칸</td>
+ </tr>
+
+
+</table>
+
+<hr>
+
+<table>
+
+<tr>
+ <td>1</td>
+ <td>2</td>
+ <td>3</td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td>5</td>
+  <td>6</td>
+</tr>
+
+<tr>
+ <td>7</td>
+ <td>8</td>
+ <td>9</td>
+
+</table>
+
+<hr>
+
+<table>
+ <tr>
+  <th>번호</th>
+  <th>이름</th>
+  <th>출석</th>
+ </tr> 
+
+ <tr>
+  <td>01</td>
+  <td>고유나</td>
+  <td>출</td>
+ </tr>
+
+ <tr>
+  <td>02</td>
+  <td>곽동현</td>
+  <td>출</td>
+
+  <tr>
+  <td>.<br>.<br>.<br></td>
+  <td>.<br>.<br>.<br></td>
+  <td>.<br>.<br>.<br></td>
+
+ <tr>
+  <td>25</td>
+  <td>홍순찬</td>
+  <td>출</td>
+  
+
+</table>
+
+
+<hr>
+
+
+
+<h2>cell(칸) 합치기</h2>
+<ol>
+  <li>colspan="n" 가로 방향으로 n개의 칸을 하나로!! 합침</li>
+  <li>rowspan="n" 세로 방향으로 n개의 칸을 하나로!! 합침</li>	
+</ol>
+
+
+<h3>colspan = "n" 가로 방향 합치기</h3>
+
+
+<table>
+
+<tr>
+ <th colspan="3"> 체온 체크표</th>
+</tr>
+
+ <tr>
+  <th>번호</th>
+  <th>이름</th>
+  <th>체온</th>
+ </tr>
+
+ <tr>
+  <td>01</td>
+  <td>박장범</td>
+  <td>36.7</td>
+ </tr>
+
+
+
+ <tr>
+  <td>02</td>
+  <td>송란희</td>
+  <td>36.5</td>
+ </tr>
+
+
+<tr>
+  <td>03</td>
+  <td>차준희</td>
+  <td>36.8</td>
+</tr>
+
+
+</table>
+
+
+
+
+<table>
+
+<tr>
+ <th colspan="3"> 체온 체크표</th>
+</tr>
+
+<tr>
+ <th colspan="2"> 대상자 </th>
+ <th> 온도  </th>
+</tr>
+
+
+
+
+ <tr>
+  <td>01</td>
+  <td>박장범</td>
+  <td>36.7</td>
+ </tr>
+
+
+
+ <tr>
+  <td>02</td>
+  <td>송란희</td>
+  <td>36.5</td>
+ </tr>
+
+
+<tr>
+  <td>03</td>
+  <td>차준희</td>
+  <td>36.8</td>
+</tr>
+
+
+</table>
+
+
+<table>
+
+<tr>
+ <th> 번호</th>
+ <th colspan="2"> 결과 </th>
+</tr>
+
+
+
+ <tr>
+  <td>01</td>
+  <td>박장범</td>
+  <td>36.7</td>
+ </tr>
+
+
+
+ <tr>
+  <td>02</td>
+  <td>송란희</td>
+  <td>36.5</td>
+ </tr>
+
+
+<tr>
+  <td>03</td>
+  <td>차준희</td>
+  <td>36.8</td>
+</tr>
+
+<tr>
+ <th colspan="3"> 체온 체크표</th>
+</tr>
+
+
+</table>
+
+<hr>
+
+<h3>colspan = "n" 세로 방향 합치기</h3>
+
+<table>
+ <tr>
+  <td rowspan = "2">log-in</td>
+  <td> id </td>
+  </tr>
+
+ </tr>
+   <td> pass</td>
+   <tr>
+</table>
+  
+
+<table>
+ <tr>
+ <td>a</td>
+ <td rowspan ="3">b</td>
+ <td>c</td>
+ </tr>
+
+<tr>
+ <td>d</td>
+ <td>e</td>
+</tr>
+
+<tr>
+ <td>f</td>
+ <td>g</td>
+</tr>
+
+<table>
+ <tr>
+  <td rowspan = "2">a</td>
+  <td> b </td>
+  <td> c </td>
+ </tr>
+
+ <tr>
+  <td rowspan ="2">d</td>
+  <td>e</td>
+ </tr>
+
+ <tr>
+  <td>f</td>
+  <td>g</td>
+ </tr>
+
+</table>
+
+<table>
+ <tr>
+  <th>날짜</th>
+  <th>이상자</th>
+  <th>확인</th>
+ </tr>
+
+ <tr>
+  <td>2020.7.29</td>
+  <td>없음</td>
+  <td rowspan="2"></td>
+ </tr>
+
+ <tr>
+  <td>2020.7.29</td>
+  <td>없음</td>
+
+ </tr>
+   
+
+
+
+</table>
+
+
+<table>
+
+<tr>
+<th colspan ="4">평가표</th>
+</tr>
+
+<tr>
+<th colspan ="2">대상자</th>
+<th colspan ="2">결과</th>
+</tr>
+
+<tr>
+<td rowspan ="3"> 번<br>호</td>
+<td>01</td>
+<td>합</td>
+<td>불</td>
+</tr>
+
+<tr>
+<td>02</td>
+<td>합</td>
+<td>합</td>
+</tr>
+
+<tr>
+<td>03</td>
+<td>불</td>
+<td>불</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h3>§ 문제. 아이티윌 게스트하우스 예약 안내<h3>
+
+<table>
+
+<tr>
+<th>방 이름</th>
+<th>대상</th>
+<th>크기</th>
+<th>가격</th>
+</tr>
+
+<tr>
+<th>유채방</th>
+<td>여성 도미토리</td>
+<td rowspan="3">4인실</td>
+<td rowspan="4">1인 20,000원</td>
+</tr>
+
+<tr>
+<th rowspan = "2">동백방</th>
+<td>남성 도미토리</td>
+</tr>
+
+<tr>
+<td>가족 1팀</td>
+</tr>
+
+<tr>
+<th colspan="2">천혜향방</th>
+<td>2인실</td>
+</tr>
+
+<tr>
+<th colspan="4">바깥채 단독:전화문의</th>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
+
