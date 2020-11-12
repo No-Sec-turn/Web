@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background-img</title>
+<link href="style.css" rel="stylesheet">
+<link href="bg-img.css" rel="stylesheet">
+</head>
+<body>
+<h1>background-image: url("배경이미지 경로"); 배경이미지</h1>
+
+ <pre>
+  background-image: url("배경이미지 경로");
+  배경에 이미지를 불러와서 적용.
+ </pre>
+ 
+<h2>background- ... : ; 배경이미지 관련 속성들</h2> 
+ <ul>
+  <li><b>background-repeat: repeat; 배경이미지 반복 지정</b>
+  	<ol>
+  		<li>repeat (기본값) 양사방 반복</li>
+  		<li>repeat-x 가로로만(x축) 반복</li>
+  		<li>repeat-y 세로로만(y축) 반복</li>
+  		<li>no-repeat 반복 안함, 한번만 나타내기</li>
+  	</ol>
+  </li> 	
+  <li><b>background-position: left top | 0 0; 배경이미지 위치</b>
+  	<ol>
+  		<li>수평 수직 순서로 방향값을 조합하기
+  		(left/center/right | top/center/bottom)</li>
+  		<li>수평 수직 순서로 직접값을 지정하기
+  		(단위는 px, %, em, cm... etc)</li>
+  	</ol>
+  </li>
+  <li><b>background-size: ; 배경이미지 크기</b>
+  <ol>
+  		<li>contain 영역에 최대한 이미지의 가로나 세로를 맞춰서 나타내기<br>
+  		(이미지 하나는 항상 온전히 나오며 반복되거나 빈공간이 생길 수 있음)</li>
+  		<li>cover 이미지 하나로만 영역을 다 덮기<br>
+  		(이미지가 잘려나갈 수도 있으나 반복되거나 빈공간이 생기지 않음)</li>
+  		<li>수평 수직 순서로 직접값을 지정하기(단위는 px,%,em ...etc)</li>
+  	</ol>
+  </li>
+  <li><b>background-attachment: scroll; 배경이미지 고정여부</b>
+  <ol>
+  		<li>scroll (기본값)자신의 영역 스크롤바에는 고정<br>
+  			브라우저 스크롤바에는 스크롤 됨</li>
+  		<li>fixed 자신의 영역 스크롤바와 브라우저 스크롤바에<br> 
+  			상관없이 항상 고정됨</li>
+  		<li>local 자신의 영역 스크롤바와 브라우저 스크롤바에<br> 
+  			모두 스크롤됨 </li>
+  	</ol>
+  </li>
+ </ul>
+ 
+ <section id="sec01">
+  <h2>background-repeat: ; 배경이미지 반복 지정</h2>
+   <p class="bg-re01">background-repeat:repeat; 양사방 반복</p>
+   <p class="bg-re02">background-repeat:repeat-x; 가로로만 반복</p>
+   <p class="bg-re03">background-repeat:repeat-y; 세로로만 반복</p>
+   <p class="bg-re04">background-repeat:no-repeat; 반복 안함</p>
+ </section>
+ 
+  <section id="sec02">
+   <h2>background-position: ; 배경이미지 위치</h2>
+    <p class="bg-po01">background-position: center center; </p>
+    <p class="bg-po02">background-position: center top; </p>
+    <p class="bg-po03">background-position: left center; </p>
+    <p class="bg-po04">background-position: 50% 50%; </p> <!-- center center와 동일 -->
+    <p class="bg-po05">background-position: 30% 300px; </p>
+    <p class="bg-po06">background-position:; </p>
+ </section>
+
+  <section id="sec03">
+   <h2>background-size: ; 배경이미지 크기</h2>
+    <p class="bg-sz01">background-size: contain;</p> <!-- 사진중요 -->
+    <p class="bg-sz02">background-size: cover;</p> <!-- 공간중요/ 짤려나감 -->
+    <p class="bg-sz03">background-size: 100% 100%;</p> <!-- 영역에 맞추기/ 찌그러짐 -->
+    <p class="bg-sz04">background-size: 50% 100%;</p> <!-- 가로로 2번 -->
+    <p class="bg-sz05">background-size: 100% 300px;</p> <!-- 세로로 2번 -->   
+    <p class="bg-sz06">background-size: 30px 30px;</p>
+  </section>
+  
+  <section id="sec04">
+   <h2>background-attachment: ; 배경이미지 고정</h2>
+    <p class="bg-at01">background-attachment: scroll;<br><br><br>
+    배경 이미지 고정여부 지정<br><br><br>배경 이미지 고정여부 지정<br><br><br>
+    배경 이미지 고정여부 지정<br><br><br>배경 이미지 고정여부 지정<br><br><br>
+    </p>
+    <p class="bg-at02">background-attachment: fixed;<br><br><br>
+    배경 이미지 고정여부 지정<br><br><br>배경 이미지 고정여부 지정<br><br><br>
+    배경 이미지 고정여부 지정<br><br><br>배경 이미지 고정여부 지정<br><br><br>
+    </p>
+    <p class="bg-at03">background-attachment: local;<br><br><br>
+    배경 이미지 고정여부 지정<br><br><br>배경 이미지 고정여부 지정<br><br><br>
+    배경 이미지 고정여부 지정<br><br><br>배경 이미지 고정여부 지정<br><br><br>
+    </p>
+  </section>
+</body>
+</html>

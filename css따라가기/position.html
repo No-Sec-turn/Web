@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position</h1>
+<ul>
+ <li>position:static; (기본값) 위치 이동 안 됨.</li>
+ <li>position:relative; 현재 위치에서 ~방향에서 ~만큼 이동.</li>
+ <li>position:absolute; 부모의 ~방향에서 ~만큼 이동.</li>
+ <li>position:fixed; 브라우저 ~방향에서 ~만큼 위치에 고정.</li>
+ <li>position:sticky;relative와 fixed의 믹스.
+    스크롤되다가 특정 위치에서 고정</li>
+</ul>
+
+<section id="sec05">
+ <h2>position:sticky;</h2>
+   스크롤되다가 특정 위치에서 고정.
+  (sticky를 줄 요소는 자신을 감싸는 다른 부모가 없어야 함)<br>
+  position: sticky;  top: 10px;
+</section>
+
+<section id="sec01">
+ <h2>position:static; (기본값) 위치 이동 안 됨.</h2>
+ 
+ <div class="st01">position:static; top:100px;</div>
+ <div class="st02">position:static; left: 300px;</div>
+</section>
+
+<section id="sec02">
+ <h2>position:relative;현재 위치에서 ~방향에서 ~만큼 이동.</h2>
+ 
+ <div class="re01">position:relative;<br>top:100px; </div>
+ <div class="re02">position:relative;<br>left:300px; </div>
+ <div class="re03">position:relative;<br>bottom:250px; </div>
+ <div class="re04">position:relative;<br>right:150px;</div>
+ <div class="re05">position:relative;<br>left:600px; bottom:100px;</div>
+ <div class="re06">position:relative;<br>left:50%; top:200px; </div>
+</section>
+
+<section id="sec03">
+ <h2>position:absolute; 부모의 ~방향에서 ~만큼 이동.</h2>
+ 
+ <div class="ab01">position:absolute;<br>top:300px;</div>
+ <div class="ab02">position:absolute;<br>left:500px;</div>
+ <div class="ab03">position:absolute;<br>bottom:100px;</div>
+ <div class="ab04">position:absolute;<br>right:100px;</div>
+ <div class="ab05">position:absolute;<br>left:0;top:0;</div>
+ <div class="ab06">position:absolute;<br>right:0;bottom:0;</div>
+ <div class="ab07">
+ 부모를 기준으로 자식의 위치를 지정하려면<br>
+ 1.<b>부모요소(#sec03)에는  position: relative;로 지정</b>하고<br>
+ 2.<b>자식요소에는 position:absolute;로 지정</b><br>
+ 3. ~방향에서 ~만큼 거리 지정.<br>
+ position:absolute; left:50%;top:50%;	  
+ </div>
+</section>
+
+<section id="sec04">
+ <h2>position:fixed; 브라우저 ~방향에서 ~만큼 위치에 고정.</h2>
+ 
+ <div class="fix01">position:fixed;<br>
+ right:0; bottom:50px; </div>
+</section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

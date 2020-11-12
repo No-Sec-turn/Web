@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+ <ul>
+  <li><a href="#sec01">content 01</a></li>
+  <li><a href="#sec03">content 02</a></li>
+  <li><a href="#h2-1">content 03</a></li>
+  <li><a href="#h2-2">content 04</a></li>
+ </ul>
+</nav>
+
+<nav id="nav-right">
+ <ul>
+  <li><a href="#sec01">content 01</a></li>
+  <li><a href="#sec03">content 02</a></li>
+  <li><a href="#h2-1">content 03</a></li>
+  <li><a href="#h2-2">content 04</a></li>
+ </ul>
+</nav>
+
+<nav id="nav-center">
+ <ul>
+  <li><a href="#sec01">content 01</a></li>
+  <li><a href="#sec03">content 02</a></li>
+  <li><a href="#h2-1">content 03</a></li>
+  <li><a href="#h2-2">content 04</a></li>
+ </ul>
+</nav>
+
+
+<h1 class="clear">float: left/right; 부유하다</h1>
+
+ <p>
+  float을 준 요소는 브라우저 위에 뜬 상태가 됨. <br>
+   뜬 상태에서 좌측이나 우측에 자리 잡고<br>
+   그 밑으로는 빈 공간이 생기면서 다음 요소들이 자연스럽게 밀고 올라오게 됨.
+ </p>
+ 
+<section id="sec01">
+ <h2>img에 float: left; 적용</h2>
+
+ <p>
+  <img alt="coffee" src="img/coffee.jpg" width="100">
+ 위하여, 대고, 같지 그러므로 보라. 되려니와, 주며, 우리 광야에서 않는 그리하였는가? 속에서 위하여 사는가 구하지
+			있다. 가치를 위하여 든 이는 꾸며 두기 동산에는 곳으로 산야에 것이다. 이것은 그러므로 크고 청춘이 가장 대중을 것이다.
+			피어나는 석가는 예가 갑 열락의 것이다. 곧 길지 어디 커다란 피어나는 황금시대를 바이며, 이상, 희망의 있다. 우리는
+			아니한 오아이스도 끓는 보이는 끝까지 얼마나 이것을 안고, 쓸쓸하랴? 못할 인간은 이상은 있는가? 석가는 돋고, 대한 청춘은
+			있는 것은 피다. 위하여, 대고, 같지 그러므로 보라. 되려니와, 주며, 우리 광야에서 않는 그리하였는가? 속에서 위하여
+			사는가 구하지 있다. 가치를 위하여 든 이는 꾸며 두기 동산에는 곳으로 산야에 것이다. 이것은 그러므로 크고 청춘이 가장
+			대중을 것이다. 피어나는 석가는 예가 갑 열락의 것이다. 곧 길지 어디 커다란 피어나는 황금시대를 바이며, 이상, 희망의
+			있다. 우리는 아니한 오아이스도 끓는 보이는 끝까지 얼마나 이것을 안고, 쓸쓸하랴? 못할 인간은 이상은 있는가? 석가는
+			돋고, 대한 청춘은 있는 것은 피다.
+ </p>
+</section>
+
+<section id="sec02">
+ <h2>img에 float: right; 적용</h2>
+
+ <p>
+  <img alt="coffee" src="img/coffee.jpg" width="100">
+ 위하여, 대고, 같지 그러므로 보라. 되려니와, 주며, 우리 광야에서 않는 그리하였는가? 속에서 위하여 사는가 구하지
+			있다. 가치를 위하여 든 이는 꾸며 두기 동산에는 곳으로 산야에 것이다. 이것은 그러므로 크고 청춘이 가장 대중을 것이다.
+			피어나는 석가는 예가 갑 열락의 것이다. 곧 길지 어디 커다란 피어나는 황금시대를 바이며, 이상, 희망의 있다. 우리는
+			아니한 오아이스도 끓는 보이는 끝까지 얼마나 이것을 안고, 쓸쓸하랴? 못할 인간은 이상은 있는가? 석가는 돋고, 대한 청춘은
+			있는 것은 피다. 위하여, 대고, 같지 그러므로 보라. 되려니와, 주며, 우리 광야에서 않는 그리하였는가? 속에서 위하여
+			사는가 구하지 있다. 가치를 위하여 든 이는 꾸며 두기 동산에는 곳으로 산야에 것이다. 이것은 그러므로 크고 청춘이 가장
+			대중을 것이다. 피어나는 석가는 예가 갑 열락의 것이다. 곧 길지 어디 커다란 피어나는 황금시대를 바이며, 이상, 희망의
+			있다. 우리는 아니한 오아이스도 끓는 보이는 끝까지 얼마나 이것을 안고, 쓸쓸하랴? 못할 인간은 이상은 있는가? 석가는
+			돋고, 대한 청춘은 있는 것은 피다.
+ </p>
+</section>
+
+<section id="sec03">
+ <h2> clear:both; 적용</h2>
+ <p>
+   위에 있는 2개의 section은 나란히 배치하기 위해 float: left;를 적용했고<br>
+  float의 영향을 받아서 세번째(현재) section이 위로 밀고 올라왔음.<br>
+    따라서 제자리로 보내기 위해(float의 영향을 해제하기 위해)<br>
+    세번째(현재) section은 clear:both;를 적용함.
+ </p>
+ <p>
+  <img alt="coffee" src="img/coffee.jpg" width="100">
+ 위하여, 대고, 같지 그러므로 보라. 되려니와, 주며, 우리 광야에서 않는 그리하였는가? 속에서 위하여 사는가 구하지
+			있다. 가치를 위하여 든 이는 꾸며 두기 동산에는 곳으로 산야에 것이다. 이것은 그러므로 크고 청춘이 가장 대중을 것이다.
+			피어나는 석가는 예가 갑 열락의 것이다. 곧 길지 어디 커다란 피어나는 황금시대를 바이며, 이상, 희망의 있다. 우리는
+			아니한 오아이스도 끓는 보이는 끝까지 얼마나 이것을 안고, 쓸쓸하랴? 못할 인간은 이상은 있는가? 석가는 돋고, 대한 청춘은
+			있는 것은 피다. 위하여, 대고, 같지 그러므로 보라. 되려니와, 주며, 우리 광야에서 않는 그리하였는가? 속에서 위하여
+			사는가 구하지 있다. 가치를 위하여 든 이는 꾸며 두기 동산에는 곳으로 산야에 것이다. 이것은 그러므로 크고 청춘이 가장
+			대중을 것이다. 피어나는 석가는 예가 갑 열락의 것이다. 곧 길지 어디 커다란 피어나는 황금시대를 바이며, 이상, 희망의
+			있다. 우리는 아니한 오아이스도 끓는 보이는 끝까지 얼마나 이것을 안고, 쓸쓸하랴? 못할 인간은 이상은 있는가? 석가는
+			돋고, 대한 청춘은 있는 것은 피다.
+ </p>
+</section>
+
+<hr>
+<h2 id="h2-1">float과 clear로 레이아웃 연습</h2>
+<div id="div-center"> 
+ <!--  ◆  [p-1]과 [p-2]을 함께 중앙정렬-->
+ <p class="fl-p fl-le">[p-1]  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+		iaculis arcu ipsum, non gravida purus volutpat id. Sed non diam nulla.
+		Etiam elementum magna lorem, non tincidunt est pulvinar in. Nulla
+		facilisi. Vivamus tempor, neque non eleifend ultricies, mi ante semper
+		ligula, tempus egestas sem erat ut mi. Nulla vulputate hendrerit
+		felis, in fermentum lacus pulvinar nec. Donec sed dolor eget diam
+		cursus elementum. Sed finibus risus sit amet hendrerit facilisis.
+		Integer laoreet blandit viverra. Donec elit arcu, efficitur ac justo
+		ut, faucibus molestie magna. Quisque aliquet diam at est convallis, eu
+		luctus dui porttitor. Ut vitae congue nulla, in fermentum augue. Nulla
+		nec ornare ipsum, eu auctor augue. Quisque ac condimentum lorem.
+		Nullam in urna vestibulum, laoreet augue non, aliquam arcu.
+</p>
+
+ <p class="fl-p fl-le">[p-2]  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+		iaculis arcu ipsum, non gravida purus volutpat id. Sed non diam nulla.
+		Etiam elementum magna lorem, non tincidunt est pulvinar in. Nulla
+		facilisi. Vivamus tempor, neque non eleifend ultricies, mi ante semper
+		ligula, tempus egestas sem erat ut mi. Nulla vulputate hendrerit
+		felis, in fermentum lacus pulvinar nec. Donec sed dolor eget diam
+		cursus elementum. Sed finibus risus sit amet hendrerit facilisis.
+		Integer laoreet blandit viverra. Donec elit arcu, efficitur ac justo
+		ut, faucibus molestie magna. Quisque aliquet diam at est convallis, eu
+		luctus dui porttitor. Ut vitae congue nulla, in fermentum augue. Nulla
+		nec ornare ipsum, eu auctor augue. Quisque ac condimentum lorem.
+		Nullam in urna vestibulum, laoreet augue non, aliquam arcu.
+</p>
+</div>
+
+<p class="fl-p clear fl-le2">[p-3]  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+		iaculis arcu ipsum, non gravida purus volutpat id. Sed non diam nulla.
+		Etiam elementum magna lorem, non tincidunt est pulvinar in. Nulla
+		facilisi. Vivamus tempor, neque non eleifend ultricies, mi ante semper
+		ligula, tempus egestas sem erat ut mi. Nulla vulputate hendrerit
+		felis, in fermentum lacus pulvinar nec. Donec sed dolor eget diam
+		cursus elementum. Sed finibus risus sit amet hendrerit facilisis.
+		Integer laoreet blandit viverra. Donec elit arcu, efficitur ac justo
+		ut, faucibus molestie magna. Quisque aliquet diam at est convallis, eu
+		luctus dui porttitor. Ut vitae congue nulla, in fermentum augue. Nulla
+		nec ornare ipsum, eu auctor augue. Quisque ac condimentum lorem.
+		Nullam in urna vestibulum, laoreet augue non, aliquam arcu.
+</p>
+
+<p class="fl-p fl-le2">[p-4]  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+		iaculis arcu ipsum, non gravida purus volutpat id. Sed non diam nulla.
+		Etiam elementum magna lorem, non tincidunt est pulvinar in. Nulla
+		facilisi. Vivamus tempor, neque non eleifend ultricies, mi ante semper
+		ligula, tempus egestas sem erat ut mi. Nulla vulputate hendrerit
+		felis, in fermentum lacus pulvinar nec. Donec sed dolor eget diam
+		cursus elementum. Sed finibus risus sit amet hendrerit facilisis.
+		Integer laoreet blandit viverra. Donec elit arcu, efficitur ac justo
+		ut, faucibus molestie magna. Quisque aliquet diam at est convallis, eu
+		luctus dui porttitor. Ut vitae congue nulla, in fermentum augue. Nulla
+		nec ornare ipsum, eu auctor augue. Quisque ac condimentum lorem.
+		Nullam in urna vestibulum, laoreet augue non, aliquam arcu.
+</p>
+
+<h2 class="clear">float과 clear로 레이아웃 연습 - end</h2>
+
+<hr>
+<h2 id="h2-2">float:right 로 레이아웃 연습</h2>
+ <p>
+ float:right로 요소들을 나란히 배치하여 우측으로 정리하면
+  요소들의 순서가 달라지므로 주의!
+ </p>
+
+ <div class="div-box">
+  div-01 <br> <img alt="summer" src="img/summer.jpg">
+ </div>
+ <div class="div-box div02">
+  div-02 <br> <img alt="meadow" src="img/meadow.jpg">
+ </div>
+ <div class="div-box">
+  div-03 <br> <img alt="australian" src="img/australian.jpg">
+ </div>
+
+
+<h2 class="clear">float:right 로 레이아웃 연습 - end</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

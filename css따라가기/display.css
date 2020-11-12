@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+
+ /* display: inline-block;으로 가로메뉴 */
+ 
+ nav li {/* border: 1px solid red; */
+ display: inline-block;/* 가로배치 */
+ width: 120px; height:30px;
+ margin-right: 10px;
+ text-align: center;
+ line-height: 30px;}
+
+ nav a {text-decoration: none;
+  background-color: #5cc;
+  width: 120px; height:30px;
+  display: block;}
+ nav a:link, nav a:visited {color: #339;} 
+ nav a:hover, nav a:active {color: #900;} 
+
+
+ /*  */
+#ol01 {padding-left: 0; }
+ 
+#ol01>li {border: 1px solid red;
+ width: 48%; height: 100px;
+ padding: 0.7%;
+ display: inline-block;} 
+ 
+#ol01>li:nth-of-type(1) {
+ background-color:#3ef; }   
+ 
+#ol01>li:nth-of-type(2) {
+ background-color:#ef3; }  
+ 
+ #ol01>li:nth-of-type(3) {
+ background-color:#3fe; }   
+ 
+#ol01>li:nth-of-type(4) {
+ background-color:#0af;}  
+ 
+#ol01:hover>li:nth-of-type(4) {
+display: none; /* 화면에서 사라짐 */}
+
+
+  /* display: inline; */
+ #sec01 *:not(h2) { /*  :not(A) = 부정선택자.
+                        A만 제외하고 적용*/
+  border: 1px solid #555;
+  width: 150px; height: 40px;
+  margin: 30px;
+  display: inline;}
+ 
+#sec01:hover *:not(h2) {
+	display: block; }
+ 
+ 
+  /* display: block; */
+#sec02>*:not(h2) {border: 1px solid #33a;
+ width: 150px; height: 40px;
+ margin: 30px;
+ display: block;} 
+ 
+#sec02:hover>*:not(h2) {
+ display: inline; }  
+ 
+
+  /* display: inline-block; */
+ #sec03>*:not(h2) {border: 1px solid #500;
+ width: 150px; height: 50px;
+ margin: 30px;
+ display: inline-block;	}
+ 
+ 
+ /* display: none;  */
+#sec04>p {
+border-top: 4px solid #333; 
+border-bottom: 1px solid #ddd;
+background-color: #ccc;
+margin:0;
+padding: 0.5em 1em;} 
+ 
+ 
+.none {display: none;
+  background-color: #000 !important;
+  color: #fff ;} 
+
+#p01:hover~.none { /* A~B (형제선택자 중) 
+          A 뒤에 오는 형제관계의 모든 B를 불러옴 */
+display: block;} 
+ 
+
+ .dis-no {display: none;}
+
+#p03:hover+.dis-no {/* A+B (형제선택자 중) 
+          A 바로 뒤에 오는 형제관계의 B하나만을 불러옴 */
+	display: block; }
+
+ hr {margin: 5em 0;}
+
+
+.hid {visibility: hidden;}
+#p06:hover+.hid {
+      visibility: visible; }
+
+h2:hover {
+ opacity: 0;	
+ transition:1.8s;
+}
+
+
+
+
+
+
+
+
+
+

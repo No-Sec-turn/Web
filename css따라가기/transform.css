@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* transform:translate(); 
+               위치 변형 */
+               
+#sec01>div {
+border: 1px solid green;
+width: 200px; height: 50px;	}            
+               
+.tr01 {transform:translateX(800px);}               
+.tr02 {transform:translateY(200px);}               
+.tr03 {transform:translateX(-250px);}               
+.tr04 {transform:translateY(-300px);}         
+.tr05 {transform:translate(900px,-350px);}  
+.tr06 {transform:translate(600px,250px);}          
+.tr07 {transform:translate(100%,100%);}           
+
+ /* 항상 center에 위치하기 */
+#sec01 {position: relative;}  
+             
+.center {background-color: #0d9;
+  width:300px !important;
+  height:auto !important;
+  white-space: pre;
+  
+  position: absolute;
+  top:50%; left: 50%;
+  transform:translate(-50%,-50%);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

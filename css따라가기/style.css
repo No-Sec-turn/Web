@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+ /* style.css는 수업 공용 스타일  */
+
+h1 {border-left:12px solid;
+   border-right:12px solid;
+   background-color: #333;
+   color: #bbb;
+   width: 600px;
+   margin: 2.5em auto;
+   padding:7px 0;
+ font-size: 28px;
+ font-weight: 600;
+ font-family: "맑은 명조", serif;
+ text-align: center;
+ }
+
+section {border: 3px solid #ccc;
+margin: 3em 1em;
+padding: 1em;}
+
+section>h2  {
+border-left: 10px solid ;
+/* padding-left:10px;
+   padding-bottom:6px;	 */
+padding: 5px 0 6px 10px;   
+background-color:#ccc;
+color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

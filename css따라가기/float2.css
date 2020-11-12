@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {margin: 0;  padding: 0; /* css 초기화 */}
+
+html {scroll-behavior:smooth;
+ /* 자연스러운(매끄러운) 스크롤 이동 */}
+
+nav {border: 1px solid green;}
+
+nav ul {border: 1px solid blue;
+ list-style: none;
+/* margin-left: 2em;왼쪽 메뉴일 때 앞의 공간 확보 */
+/* float: right; 오른쪽 메뉴를 원하면 ul을 float,
+   margin-right: 2em; 메뉴 뒤의 공간 확보 */
+margin: 0 auto; 
+width: 282px;
+overflow: hidden /* 자식들이 float으로 빠져나가면
+부모의 형태(높이)가 유지될 수 없으므로 해당 값을 줌 */;
+   }
+ 
+nav li {border: 1px solid red;
+ float: left;
+ margin-right: 10px;}
+ 
+nav li:nth-of-type(4) {
+ margin-right: 0; }
+ 
+nav a {border: 1px solid pink;}
+
+section>p { height: 300px;}
+
+.p01 {/* border: 1px solid red; */
+  background-color: #4ef;
+  width: 30%;
+  float: left;
+  margin-right: 5%;}
+  
+.p02 {/* border: 1px solid red; */
+  background-color: #fe4;
+  width: 65%;
+  float: left;
+  margin-bottom: 20px;}
+  
+.p03 {border: 5px solid blue;
+  clear: both; /* float의 영향을 해제해서 제자리로 */}
+
+
+ /* overflow */
+.ov-01 {overflow: auto;}
+.ov-02 {overflow: hidden;}
+
+.ov-02 img { width:300%; }
+.ov-02 img:hover {width:100%; 
+transition:1.9s;}
+
+.ov-02 b {margin-left: 200px;}
+.ov-02:hover b {margin-left: 0; 
+transition:1.9s;}
+
+
+
+
+aside#quick {
+ position: fixed;
+ right: 0;  bottom: 40%;
+ background-color: #000;
+ padding: 0.25em;
+ font-size: 1.5em;
+ text-transform: uppercase;}
+ 
+aside#quick:hover {background-color: #3aa;}
+
+aside#quick a:link, aside#quick a:visited {
+text-decoration: none;
+color: #fff;}
+
+aside#quick a:hover, aside#quick a:active {
+color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

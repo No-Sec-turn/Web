@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+<link href="style.css" rel="stylesheet">
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+<h1>transform 변형</h1>
+
+<h2>transform: ; 변형함수의 종류</h2>
+<ol>
+ <li>translate() 위치 변형</li>
+ <li>scale() 크기 변형</li>
+ <li>rotate() 회전 변형</li>
+ <li>skew() 기울기 변형</li>
+</ol>
+
+<section id="sec01">
+ <h2>transform:translate(); 위치 변형</h2>
+ 
+ <div class="tr01">transform:translateX(800px);</div>
+ <div class="tr02">transform:translateY(200px);</div>
+ <div class="tr03">transform:translateX(-250px);</div>
+ <div class="tr04">transform:translateY(-300px);</div>
+ <div class="tr05">transform:translate(900px,-350px);</div>
+ <div class="tr06">transform:translate(600px,250px);</div> 
+ <div class="tr07">transform:translate(100%,100%);</div> 
+ <div class="tr08">transform:translate();</div> 
+ <div class="center">
+         <b>[항상 center에 위치하기]</b>
+          1. 상위요소의 설정은 
+  position: relative;로,
+                        중앙정렬의 대상은 
+  <b>position: absolute;
+  top:50%; left: 50%;로 설정
+          2. 추가로
+  transform:translate(-50%,-50%);</b>하여
+   자신의 크기 절반만큼 위로,앞으로 이동
+          3. 항상 중앙정렬 끝   
+  </div> 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

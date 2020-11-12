@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+ p {border: 4px solid #066;
+  background-color: #aff;
+  width: 500px;  height: 100px;
+  padding: 1em;}
+
+div {border: 4px solid #066;
+  background-color: #aff;
+  width: 100px;  height: 100px;
+  padding: 1em;}
+  
+.br-rad01 {border-radius: 20px;}
+.br-rad02 {border-radius: 0 20px;}
+.br-rad03 {border-radius: 40px 0;}
+.br-rad04 {border-radius: 0 30px 60px 90px;}
+.br-rad05 {border-radius: 50%;}
+
+img.br-rad05:hover {
+	border-radius: 0;
+	transition: 2s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

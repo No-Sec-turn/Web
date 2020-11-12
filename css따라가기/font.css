@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+body {
+font-family: 'Nanum Gothic', sans-serif; }
+
+section {border: 3px solid #ccc;
+ margin: 2em 0;
+ padding: 1em; }
+ 
+section>h2 {color: #ccc;
+     text-align: center; }
+     
+.pre {background-color:#ccc;
+	white-space: pre; 
+  /* pre태그처럼 공백 살려줌 */
+  font-size: 14px; }     
+
+ /* ctrl + shift + /  = 주석 */
+ 
+ /* font-size : ; 글자 크기 */
+#sec01 {font-size: 30px;} 
+ 
+.fs01 {font-size: 16px;}
+.fs02 {font-size: 20px;}
+.fs03 {font-size: 1em;}
+.fs04 {font-size: 1.25em;}
+.fs05 {font-size: 1rem;}
+.fs06 {font-size: 1.25rem;}
+
+
+
+ /* font-weight : ; 글자 두께 */
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;}
+.fw-n {font-weight: normal;
+       color: skyblue; }
+.fw-b {font-weight: bold;
+       color: navy; }
+
+
+ /* font-style : ; 글자 기울기 */
+
+.fst01 {font-style: italic;}
+.fst02 {font-style: oblique;}
+.fst03 {font-style: normal;
+ color: green;}
+
+
+ /* font-family : ; 글꼴(서체) */
+ 
+ .ffm01 {font-family: "Verdana", "Arial", sans-serif;}
+ .ffm02 {
+ font-family: "Times New Roman", "Times", "Georgia", serif;}
+ 
+ /*  http://fonts.google.com
+ 
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+ 
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Nanum Pen Script', cursive; 
+  */
+ 
+.ffm03 {
+font-family: 'Do Hyeon', sans-serif;}
+.ffm04 {
+font-family: 'Nanum Myeongjo', serif;} 
+.ffm05 {
+font-family: 'Nanum Pen Script', cursive;}
+.ffm06 {
+font-family: 'Gothic A1', sans-serif;	
+}
+.ffm06-1 {
+font-weight: 900;} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

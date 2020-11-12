@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0;
+ /* css초기화
+  전체선택자로 모든 요소의 여백을 초기화 함. 
+ (태그마다 각자 기본 여백값이 상이하므로 0으로 통일)
+ */}
+
+nav {border: 1px solid green;}
+
+nav>ul {border: 1px solid blue;
+/* 
+height: 30px; 자식들이 float으로 빠져나가면
+                      부모는 형태를 잃어버림(높이값이 0)
+따라서 1. 직접 height값을 주거나 
+     2.overflow를 hidden으로 지정하면 됨 */
+ overflow:hidden; 
+ 
+list-style: none /* 목록 앞의 기본 모양 제거 */; 
+/* padding-left:0; */
+ }
+
+nav li {/* border: 1px solid red; */
+background-color:red;
+float: left; /* 메뉴들을 가로로 나란히 배치 */
+margin-right: 10px;
+height: 35px;
+line-height: 35px;/* 행간값과 높이값을
+일치시키면 한 줄짜리 글자가 수직 중앙정렬 됨 */}
+
+nav li:hover {background-color:pink;
+ transition:1.3s;}
+
+nav a {border: 1px solid olive;
+ padding: 8px 5px;
+ text-decoration: none;/* 글자의 밑줄 제거*/
+ font-weight: bold;
+ text-transform: capitalize;}
+
+nav a:link, nav a:visited {color:pink;}
+nav a:hover, nav a:active {color:red;} 
+
+
+#nav-right>ul {float: right;}
+
+
+
+
+
+section>p {
+	width: 600px;}
+
+#sec01, #sec02 /* , = 그룹선택자 */{
+ width: 650px;
+ float: left;	}
+
+#sec01 img {float: left;
+ margin-right: 1em; }
+
+#sec02 img {float: right;
+margin-left: 1em;}
+
+#sec03 {border-color: #f00;
+clear: both;/* 
+  float의 영향을 해제 */}
+
+#h2-1, #h2-2 {
+margin-top: 10em;	
+}
+
+
+
+ /* float과 clear로 레이아웃 연습 */
+
+.fl-p {border: 1px solid red;}
+
+.fl-le {background-color: #aef;
+ float: left;
+ width: 45%;}
+
+.clear {clear: both;}
+
+.fl-le2 {background-color: #f77;
+float: left; 
+width: 47%;
+margin-right: 1%;
+margin-top: 50px;}
+
+/*
+ ◆ [p-1]과 [p-2]을 함께 중앙정렬 하려면
+두개의 p를 div로 묶어주고 그 div의 크기를 줄인 다음에
+margin을 auto로 지정하면 된다.
+
+#div-center {border: 1px solid red;
+width: 92%(세부값은 더 타이트하게 조절하기);
+margin: auto (수평만 auto로 줘도 됨);}
+
+ */
+
+
+
+/* float:right 로 레이아웃 연습 */
+
+.div-box {border: 1px solid;
+ padding: 1em;	
+ font-size: 1.5em;
+ float: right;
+ margin-left: 2em; }
+
+.div-box>img {width: 380px;}
+
+.div02 {margin-right: 100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

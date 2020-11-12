@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+.pre {
+white-space: pre;	
+/* 공백처리를 그대로 살림 */
+font-size: 1.2em;
+font-weight: bold;
+color: #530;}
+
+h1 {font-size: 26px;
+ font-weight: 500;
+ font-family: "Times", serif;
+ font-style: italic;
+ text-align: center;
+ text-indent: 0.7em; 
+ text-transform: capitalize;
+ text-decoration: underline;
+ color: #00a;}
+
+section>h2 {
+	background-color: #3af;
+	font-family: "Verdana", sans-serif;
+	font-size:22px;
+	font-weight: 500;
+	text-indent:0.7em;
+	text-transform: capitalize;
+	color: #03d;
+}
+
+pre {font-size:1.2em;
+font-family: sans-serif;} 
+
+pre>span {font-weight: bold;}
+
+pre>a {text-decoration: none; }
+
+pre>a:hover {/* 상태선택자-마우스오버시 */
+	  text-decoration: underline;
+      background-color: #000;
+      color: #fff;}
+
+#sec01>p { /* 1. 관계선택자-부모자식 */
+ background-color: #aef;	
+ width: 50%;}
+
+/* .tal01, .tal02, .tal03, .tal04 {
+ 2. 그룹선택자
+  background-color: #aef;	
+  width: 50%;}
+ */
+.tal01 {text-align: left;} 
+.tal02 {text-align: center;}
+.tal03 {text-align: right;}
+.tal04 {text-align: justify;}
+
+.tal01:hover {text-align: center;}
+td.tal03:hover {font-size: 20px;}
+
+#tab-al {border: 1px solid;
+width: 600px;  height: 200px;} 
+
+#tab-al th { /* 1. 관계선택자-자손 */
+	border: 1px solid red;}
+#tab-al td {border: 1px solid blue;}
+
+
+
+/* text-decoration : ; 글자의 여러 줄들 */
+.tdec01 {text-decoration: overline;}
+.tdec02 {text-decoration: line-through;}
+.tdec03 {text-decoration: underline;}
+.tdec04 {background-color: #000;
+   font-size:1.2em; 
+   font-weight: bold;
+   color:#fff; }
+.tdec04>a {text-decoration: none;
+   color: #ff0; }
+.tdec04>a:hover {
+	text-decoration: underline;}
+
+
+ /* text-indent: ; 들여쓰기 */
+.tind01 {text-indent: 16px;}
+.tind02 {text-indent: 0.5em;}
+.tind03 {text-indent: 10%;}
+.tind04 {text-indent: -50px;}
+.tind05:hover {text-indent: 30%; }  
+ 
+  
+ /* text-transform: ; 
+ 영문의 대소문자 지정 */
+ 
+.ttr01 {text-transform: none;}
+.ttr02 {text-transform: lowercase;}
+.ttr03 {text-transform: uppercase;} 
+.ttr04 {text-transform: capitalize;} 
+ 
+ 
+  /*  */
+ 
+ 
+  /* text-shadow: ; 글자의 그림자 */
+#sec06>p {
+font-size: 60px;	
+font-weight: bold;
+font-family: "Tahoma", sans-serif;
+text-transform: capitalize;
+text-align: center;
+letter-spacing: 3px;} 
+ 
+.tsh01 {text-shadow: 8px 0 0 #444;} 
+.tsh02 {text-shadow: 0 8px 0 #444;} 
+.tsh03 {text-shadow: 0 0 8px #444;}	 
+.tsh04 {color:#fff;
+	text-shadow: 6px 8px 5px #333;} 
+.tsh05 {text-shadow: -10px -12px 5px #333;}
+ 
+.tsh06 {text-shadow: 0 0 0 #000;}
+.tsh06:hover {text-shadow: 0 0 14px #9fd;
+ transition: 2.5s ease-out;}
+ 
+.tsh07 {text-shadow: 6px 8px 10px #fa6, -6px -8px 10px #a6f;}
+
+.tsh08:hover {color: #320;
+text-shadow: 7px 5px 7px #730; 
+transition: 2.5s;}
+
+.bg-bk {background-color: #000;
+ padding: 1em;} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

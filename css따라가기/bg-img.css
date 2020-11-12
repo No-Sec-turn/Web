@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body {
+	background-image: url("img/arrow-up.png");
+	background-repeat: no-repeat; /* 배경 반복 안함 */
+	background-position: center top; /* 속성 두 개 함께 쓸 수도 있다*/
+	background-attachment: fixed;
+}
+
+pre {
+	background-color: rgb(255,255,255, 0.7); 
+	/* 흰색, 빛의 삼원색 red green blue 모두 최대값255, 
+	반대로 0이면 검정색 
+	4자리로 하면 투명효과 넣을 수 있음 */
+	font-family: "Verdana", sans-serif;
+	font-weight: bold;
+	font-size: 1.2em; 
+}
+
+/* background-repeat */
+#sec01>p {border: 1px solid;
+		  width: 45%; height: 400px;
+		  padding: 1.2%;
+		  margin-right: 2%;
+		  display: inline-block;
+		  font-weight: bold;
+		  font-size: 1.5em;
+		  background-image: url("img/programming.gif");
+		  }
+		  
+#sec01>p:first-line {
+/* 	A:first-line A의 첫줄을 불러옴 */
+	background-color: #fff;
+}
+
+.bg-re01 {background-repeat: repeat;}
+.bg-re02 {background-repeat: repeat-x;}
+.bg-re03 {background-repeat: repeat-y;}
+.bg-re04 {background-repeat: no-repeat;}		  
+
+
+/* background-position */
+#sec02>p, #sec03>p {border: 5px solid red;
+height: 600px;
+background-color: rgba(255,255,255,0.8);
+/* 빛의 삼원색 r,g,b를 (레드,그린,블루)
+	0~255 사이의 값을 각 자리별로 적용가능 
+	마지막 a가 추가되면 투명도(alpha)를 조절할 수 있음
+	0~1의 값, 0은 투명 1은 불투명*/
+background-image: url("serif.gif");
+background-repeat: no-repeat;
+font-size: 1.5em;
+font-weight: bold;
+color: #900;}
+
+.bg-po01 {background-position: center center;}
+.bg-po02 {background-position: center top;}
+.bg-po03 {background-position: left center;}
+.bg-po04 {background-position: 50% 50%;}
+.bg-po05 {background-position: 30% 300px;}
+.bg-po06:hover {background-position: right bottom;
+				transition:2.5s;}
+
+/* background-size */				
+#sec03>p {background-repeat: repeat;}
+.bg-sz01 {background-size: contain;}
+.bg-sz02 {background-size: cover;}	
+.bg-sz03 {background-size: 100% 100%;}	
+.bg-sz04 {background-size: 50% 100%;}	
+.bg-sz05 {background-size: 100% 300px;}
+.bg-sz06 {background-size: 30px 30px;}
+
+/* background-attachment */
+#sec04>p {border: 5px dashed #999;
+height: 400px;
+width: 500px;
+background-color: #fff;
+/* 빛의 삼원색 r,g,b를 (레드,그린,블루)
+	0~255 사이의 값을 각 자리별로 적용가능 
+	마지막 a가 추가되면 투명도(alpha)를 조절할 수 있음
+	0~1의 값, 0은 투명 1은 불투명*/
+background-image: url("serif.gif");
+/* background-repeat: no-repeat; */
+font-size: 1.8em;
+line-height: 2; /*행간*/
+color: #00a;
+overflow: auto;
+display: inline-block;
+margin-right: 1em;}	
+
+#sec04>p:first-line {
+	font-weight: bold;
+	text-shadow: 3px 3px 2px #fff;
+}
+
+.bg-at01 {background-attachment:scroll;}
+.bg-at02 {background-attachment:fixed;}
+.bg-at03 {background-attachment:local;}	
+				

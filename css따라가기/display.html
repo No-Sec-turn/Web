@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link href="style.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+<h1>display</h1>
+<nav>
+ <ul>
+  <li><a href="#sec01">menu01</a></li>
+  <li><a href="#sec02">menu02</a></li>
+  <li><a href="#sec03">menu03</a></li>
+  <li><a href="#sec04">menu04</a></li>
+ </ul>
+</nav>
+
+<h2>display의 속성값들</h2>
+ <ol id="ol01">
+  <li>display:inline; inline 요소로 바꿔줌</li>
+  <li>display:block; block 요소로 바꿔줌</li>
+  <li>display:inline-block; 
+           두가지 특징을 결합한 요소로 바꿔줌</li>  
+  <li>display:none; 요소를 화면에서 숨김  </li>
+ </ol>
+
+<h2>inline요소와 block요소</h2>
+ <ol>
+  <li>inline요소 - 한 줄에 서로 나란히 올 수 있는 요소 <br>
+     위아래 margin 적용 불가, 크기(width/height) 적용 불가
+  </li>
+  <li>block요소 - 한 줄에 나란히 올 수 없는 요소 <br>
+   margin 모두 적용, 크기 적용 가능
+  </li>
+ </ol>
+
+<section id="sec01">
+ <h2>display:inline;</h2>
+ 
+ <p>p tag-1</p>
+ <p>p tag-2</p>
+ <div>div tag-1</div>
+ <div>div tag-2</div>
+ <h3>h3 tag-1</h3>
+ <h3>h3 tag-2</h3>
+ <ul>
+  <li>li tag-1</li>
+  <li>li tag-2</li>
+ </ul> 
+</section>
+
+<section id="sec02">
+ <h2>display:block;</h2>
+
+ <a href="#">a tag-1</a>
+ <a href="#">a tag-2</a>
+ <b>b tag-1</b> <b>b tag-2</b>
+ <i>i tag-1</i> <i>i tag-2</i>
+ <span>span tag-1</span> <span>span tag-2</span>
+ <label>label tag-1</label>
+ <label>label tag-2</label>
+</section>
+
+
+<section id="sec03">
+ <h2>display:inline-block;</h2>
+ 
+ <p>p tag-1</p>
+ <div>div tag-1</div>
+ <h3>h3 tag-1</h3>
+ <a href="#">a tag-1</a> <b>b tag-1</b>
+ <i>i tag-1</i> <span>span tag-1</span> 
+ <label>label tag-1</label>
+</section>
+
+
+<section id="sec04">
+ <h2>display: none; 화면에서 요소가 (공간도 남김없이)사라짐</h2>
+
+  <p id="p01">p tag-1</p>
+  <p class="none">p tag-2</p>
+  <p id="p03">p tag-3</p>
+  <p class="dis-no">p tag-4</p>
+  <p class="none">p tag-5</p>
+ <hr>
+ <h2>visibility:hidden; 화면에서 요소가 (공간은 남기고)사라짐 </h2>
+  <ol>
+   <li> visibility:visible; 화면에 요소가 보임(기본값)</li>
+   <li> visibility:hidden; 화면에서 요소가 사라짐 </li>
+  </ol>
+ 
+  <p id="p06">p tag-6</p>
+  <p class="hid">p tag-7</p>
+  <p>p tag-8</p>
+  
+  <hr>
+  <h2>opacity:n (0~1) ; 요소의 투명도 </h2>
+  
+  <pre>
+     요소 자체의 투명도를 조절하는 속성으로
+     값은 0~1까지 적용 가능하며
+   0일 때 완전 투명, 1일 때 불투명하며 
+     소수값으로 적당한 투명도를  줄 수 있다.
+  </pre>
+</section>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
