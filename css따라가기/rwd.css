@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS icon */
+article {
+white-space: pre;}
+
+.fs30 {font-size: 30px;}
+
+
+
+/* 
+ 장치 종류를 조건으로 미디어쿼리 적용하기
+ 
+@media print {
+ body {	background-color: #fff;}
+ .img-n {display: none;}
+}
+ */
+ 
+ 
+body {
+ background-color: #aef; }
+ 
+h1 {width: 80% !important;
+ font-size: 18px; }
+ 
+.img-n {display: none;
+ /* 모바일에서는 그림 숨김 */} 
+ 
+section, aside {border: 1px solid;
+ margin: 3em 1em;
+ padding: 1em; }
+  
+
+@media screen and (min-width:760px) {
+body {
+ background-color: #fa0;	
+ } 	
+ 
+h1 { font-size: 24px; }		
+}
+
+@media screen and (min-width:1080px) {
+body {
+ background-color: #2d5; } 				
+ 
+h1 { font-size: 28px; }
+		
+section, aside { float: left;	}		
+		
+		
+.img-n {display: inline;
+ /* 숨겼던 그림 다시 보이기 */} 	
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

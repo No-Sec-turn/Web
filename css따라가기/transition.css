@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+#des-box {background-color:#000;
+margin: 3em auto;/* ★ 수평 중앙정렬 */
+padding: 1.5em 2em;
+width:700px;
+color:#fff;}
+
+ol>li {margin-bottom: 1em;
+  padding: 0.5em;
+list-style: url("img/arrow.gif");
+/* ★ 목록 앞의 모양 - 이미지로 지정하기 */ }
+ 
+#li04 {margin-bottom:3em;
+border-top: 2px dashed;
+font-weight: bold;
+ color: #077;} 
+ 
+#li04>ul {margin-top:0.5em;
+list-style: square;/* 목록 앞의 모양 - 사각형으로*/
+height: 0;/* 평상시 영역을 0으로 */
+overflow: hidden;/* 영역을 벗어난 내용처리-숨김 
+ (영역 크기와 무관하게 컨텐츠는 항상 보여짐이 기본이므로)*/
+background-color:#ccc;
+box-sizing: border-box;/* 요소의 크기 계산시 
+border까지 포함하기(padding도 포함됨)*/}
+
+#li04>ul>li {margin-bottom: 1.2em;}
+
+#li04:hover>ul {
+padding:1em 2em; 
+height: 300px;/* 부모에 마우스오버시 영역이 충분히 길어짐 */
+transition:2.5s ease-out;
+}
+
+
+
+
+/* transition */
+.ball {
+width: 100px; height: 100px;
+margin-left: 100px;/* 추가분 */
+background-color: #0af;
+font-weight: bold;/* 추가분 */
+text-transform: capitalize;/* 추가분 */
+text-align: center;
+line-height: 100px; 
+}
+
+ /* :hover시에 원으로 변하는(배경색 포함)... */
+.ball:hover {border-radius:50%;
+background-color: #f70;
+transition-property:border-radius, background-color; 
+  /* transition을 모서리라운딩 속성만 적용 */
+transition-duration:1.5s, 3s/* 진행 시간 */;}
+
+
+  /* transition-delay  */
+#del {margin-top: 3em;}
+
+#del>.ball {display: inline-block;}
+
+#del:hover>.ball {border-radius:50%;
+background-color: #370;
+transition:3s;}
+
+#del:hover>.del-1 {transition-delay: 0.8s;}
+#del:hover>.del-2 {transition-delay: 1.6s;}
+#del:hover>.del-3 {transition-delay: 2.4s;}
+#del:hover>.del-4 {transition-delay: 3.2s;}
+#del:hover>.del-5 {transition-delay: 4s;}
+
+
+
+ /* transition-timing-function */
+#sec01>.box {border-right: 20px solid #035;
+border-radius: 0 20px 20px 0; 
+background-color:#6ae;
+width: 150px; height: 50px;
+margin-bottom: 30px;
+position: relative;
+left: 0;}
+
+#sec01:hover>.box {
+left: 1100px;	
+transition: 4s 0.5s; }
+
+#sec01:hover>.tf01 {transition-timing-function:ease;}
+#sec01:hover>.tf02 {transition-timing-function:ease-in;}
+#sec01:hover>.tf03 {transition-timing-function:ease-out;}
+#sec01:hover>.tf04 {transition-timing-function:ease-in-out;}
+#sec01:hover>.tf05 {transition-timing-function:linear;}
+/* cubic-bezier.com */
+#sec01:hover>.tf06 {transition-timing-function:
+	cubic-bezier(.17,.67,.83,.67);}	
+#sec01:hover>.tf07 {transition-timing-function:
+	cubic-bezier(.34,1.58,.83,.67);}
+#sec01:hover>.tf08 {transition-timing-function:
+	cubic-bezier(.27,1.96,.85,-1.63);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

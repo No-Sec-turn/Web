@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rwd</title>
+<!-- font awesome5 Icon-->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<!-- font awesome4 Icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- bootstrap Icon -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Google Icon -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+ <!-- bootstrap Icon소스와 충돌되어서 
+ 직접 작업한 스타일 파일의 우선 순위를 높이기 위해 
+ 소스를 아이콘 내용보다 아래로 위치 시켰음 -->
+<link href="style.css" rel="stylesheet">
+<link href="rwd.css" rel="stylesheet">
+</head>
+<body>
+<article>
+  <h1>CSS icon</h1>
+<a href="https://www.w3schools.com/icons/icons_reference.asp"
+ target="_blank">
+ www.w3schools.com - icons reference
+</a>
+head태그 안에 각 방식별 소스를 붙여넣고
+i태그나 span태그를 활용하여 적용함(상세방법은 위 링크 참조)
+
+[font awesome5 Icon]
+<i class='fab fa-accessible-icon fs30'></i> <br>
+
+[font awesome4 Icon]
+<i class="fa fa-address-book fs30"></i> <br>
+
+[bootstrap Icon]
+<i class="glyphicon glyphicon-alert"></i><br>
+
+[Google Icon]
+<i class="material-icons">ac_unit</i>
+ <button>Icon <i class="material-icons">access_alarm</i> </button>
+</article>
+
+
+<h1>Responsive Web Design</h1>
+
+<p>장치 종류나 화면 너비, 방향 등의 조건에 따라
+ 스타일을 다르게 적용할 수 있다.
+</p>
+
+<section>
+ <h4>viewport 미설정시</h4>
+  <p>
+   <img alt="viewport" src="img/img_viewport1.png" class="img-n"><br>
+    작은 장치에서는 화면이 축소되어 보임
+  </p>
+
+  <h2>미디어쿼리 구문 형식</h2>
+  <pre>
+       @media not|only mediatype and (expressions) {
+            CSS-Code;
+            }
+  </pre>
+</section>
+
+<aside>
+ <h2>장치 종류</h2>
+ <ul>
+  <li>all 모든 장치 종류</li>
+  <li>screen 스크린으로 나타내는 유형의 컴퓨터(스마트폰)</li>
+  <li>speech 음성낭독기</li>
+  <li>print  프린터</li>
+ </ul>
+</aside>
+
+
+</body>
+</html>

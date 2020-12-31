@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="style.css" rel="stylesheet">
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+<h1>transition 단순한 애니메이션 효과</h1>
+
+<div id="des-box">
+<h2>transition의 세부속성들 </h2>
+<ol>
+ <li>transition-property: ; - 효과 줄 속성</li>
+ <li>transition-duration: ; - 진행 시간</li>
+ <li>transition-delay: ; - 지연 시간</li>
+ <li id="li04">transition-timing-function: ; - 가속감속 등
+  <ul>
+   <li>ease = (기본값) 느리게 시작해서 빨라지다가 천천히 끝남</li>
+   <li>ease-in = 시작을 느리게</li>
+   <li>ease-out = 마지막을 느리게</li>
+   <li>ease-in-out = 시작과 마지막을 같이 느리게</li>
+   <li>linear = 등속</li>
+   <li>cubic-bezier(n,n,n,n) = 베지에함수값으로 지정<br>
+   <a href="https://cubic-bezier.com" target="_blank">
+    cubic-bezier.com (베지에함수값 자동생성기)
+   </a>
+   </li>
+  </ul>
+ </li>
+</ol>
+</div>
+
+<div> 
+ :hover시에 배경색,원으로 변하는 transition 
+ <div class="ball">ball</div>
+ (transition을 모서리라운딩 속성만 적용)
+</div>
+<div id="del"> 
+ :hover시에 배경색,원으로 변하는 transition + 지연 시간 <br>
+ <div class="ball del-1">ball-1</div>
+ <div class="ball del-2">ball-2</div>
+ <div class="ball del-3">ball-3</div>
+ <div class="ball del-4">ball-4</div>
+ <div class="ball del-5">ball-5</div><br>
+ (지연 시간)
+</div>
+
+<section id="sec01">
+ <h2>transition-timing-function: ; - 가속감속 </h2>
+ <div class="box tf01">ease</div>
+ <div class="box tf02">ease-in</div>
+ <div class="box tf03">ease-out</div>
+ <div class="box tf04">ease-in-out</div>
+ <div class="box tf05">linear</div>
+ <div class="box tf06">cubic-bezier(.17,.67,.83,.67)</div>
+ <div class="box tf07">cubic-bezier(.61,1.86,.4,.18)</div>
+ <div class="box tf08">cubic-bezier(.27,1.96,.85,-1.63)</div>
+</section>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
